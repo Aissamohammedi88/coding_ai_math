@@ -16,3 +16,79 @@ bin-release/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+
+---
+
+### 📄 `.gitignore`
+
+```gitignore
+# ═══════════════════════════════════════════════════════════════════
+# PROTON-CALC TOOL — .gitignore
+# ═══════════════════════════════════════════════════════════════════
+
+# --- SYSTÈME D'EXPLOITATION & ÉDITEURS ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+.vs/
+
+# --- PYTHON (CACHE & COMPILATION) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+# --- ENVIRONNEMENTS VIRTUELS (Isolation Souveraine) ---
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# --- SÉCURITÉ (Zéro fuite de secrets) ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+secrets.json
+config.local.json
+
+# --- ARTEFACTS D'EXÉCUTION TEMPORAIRES ---
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+temp_code_*.py
+
+# --- BASES DE DONNÉES LOCALES ---
+*.db
+*.sqlite3
+*.sqlite
